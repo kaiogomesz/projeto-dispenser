@@ -1,16 +1,20 @@
 <style>
-  /* Esconde o cabeçalho colorido do tema */
-  .page-header {
-    display: none;
+  /* Remove o cabeçalho (título, nick e botão GitHub) */
+  header { 
+    display: none !important; 
   }
-  .main-content {
+
+  /* Faz o conteúdo ocupar quase a largura total da tela */
+  .wrapper {
     max-width: 95% !important;
-    margin: 0 auto;
-    padding-top: 2rem; /* Adiciona um espacinho no topo para o texto não colar na borda */
+    margin: 0 auto !important;
   }
-  img {
-    width: 100%;
-    max-width: 800px;
+
+  /* Ajusta a área do texto para não ficar colada no topo */
+  section {
+    padding: 40px 20px !important;
+    width: 100% !important;
+    max-width: none !important;
   }
 </style>
 
@@ -82,6 +86,7 @@ void loop() {
 
   delay(10);
 }
+
 
 
 
