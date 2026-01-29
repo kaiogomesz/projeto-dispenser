@@ -1,23 +1,28 @@
 <style>
-  /* Remove o cabeçalho (título, nick e botão GitHub) */
-  header { 
-    display: none !important; 
+  /* Remove o botão verde, o título 'projeto-dispenser' e os créditos */
+  #header_wrap, .inner > h1, .inner > h2, #downloads {
+    display: none !important;
   }
 
-  /* Faz o conteúdo ocupar quase a largura total da tela */
-  .wrapper {
+  /* Remove qualquer borda ou sombra que sobrar no topo */
+  #header_wrap {
+    padding: 0 !important;
+    border: none !important;
+  }
+
+  /* Expande o conteúdo para a largura total */
+  #main_content_wrap .inner {
     max-width: 95% !important;
-    margin: 0 auto !important;
+    width: 95% !important;
   }
 
-  /* Ajusta a área do texto para não ficar colada no topo */
-  section {
-    padding: 40px 20px !important;
-    width: 100% !important;
-    max-width: none !important;
+  /* Ajusta o espaçamento do novo título para não colar no topo */
+  #main_content {
+    padding-top: 40px !important;
   }
 </style>
 
+# Dispenser de Alimentos
 
 ---
 
@@ -86,6 +91,7 @@ void loop() {
 
   delay(10);
 }
+
 
 
 
