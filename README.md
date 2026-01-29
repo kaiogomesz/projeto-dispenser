@@ -1,29 +1,28 @@
 <style>
-  /* Remove o botão verde, o título 'projeto-dispenser' e os créditos */
-  #header_wrap, .inner > h1, .inner > h2, #downloads {
+  /* 1. Remove completamente o cabeçalho e o botão do GitHub */
+  #header_wrap {
     display: none !important;
   }
 
-  /* Remove qualquer borda ou sombra que sobrar no topo */
-  #header_wrap {
-    padding: 0 !important;
+  /* 2. Remove as linhas pontilhadas e margens extras do topo */
+  #main_content_wrap {
     border: none !important;
+    padding-top: 20px !important;
   }
 
-  /* Expande o conteúdo para a largura total */
-  #main_content_wrap .inner {
+  /* 3. Estica o conteúdo para preencher a tela inteira */
+  #main_content_wrap .inner, 
+  #main_content {
     max-width: 95% !important;
     width: 95% !important;
+    margin: 0 auto !important;
   }
 
-  /* Ajusta o espaçamento do novo título para não colar no topo */
-  #main_content {
-    padding-top: 40px !important;
+  /* 4. Ajusta o texto para aproveitar o espaço novo */
+  section#main_content {
+    max-width: none !important;
   }
 </style>
-
-# Dispenser de Alimentos
-
 ---
 
 # Como fazer um alimentador automático com Arduino 
@@ -91,6 +90,7 @@ void loop() {
 
   delay(10);
 }
+
 
 
 
