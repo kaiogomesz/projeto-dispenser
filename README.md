@@ -1,13 +1,14 @@
 <style>
   .main-content {
-    max-width: 95% !important; /* Faz o texto ocupar 95% da largura da tela */
+    max-width: 95% !important;
     margin: 0 auto;
   }
   img {
-    width: 100%; /* Faz as fotos seguirem a largura da tela */
-    max-width: 800px; /* Mas evita que fotos pequenas fiquem gigantes e sem qualidade */
+    width: 100%;
+    max-width: 800px;
   }
 </style>
+
 ---
 
 # Como fazer um alimentador automático com Arduino 
@@ -75,5 +76,6 @@ void loop() {
 
   delay(10);
 }
+
 
 
