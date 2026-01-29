@@ -1,25 +1,24 @@
 <style>
-  /* 1. Remove completamente o cabeçalho e o botão do GitHub */
-  #header_wrap {
+  /* 1. Remove o título "projeto-dispenser" e a descrição (nick e créditos) */
+  #header_wrap h1, 
+  #header_wrap h2 {
     display: none !important;
   }
 
-  /* 2. Remove as linhas pontilhadas e margens extras do topo */
-  #main_content_wrap {
-    border: none !important;
-    padding-top: 20px !important;
+  /* 2. Mantém o botão verde mas remove o excesso de espaço que o título ocupava */
+  #header_wrap .inner {
+    padding: 20px 0 !important;
   }
 
-  /* 3. Estica o conteúdo para preencher a tela inteira */
-  #main_content_wrap .inner, 
-  #main_content {
+  /* 3. O código que deu certo para a largura total */
+  .wrapper {
     max-width: 95% !important;
-    width: 95% !important;
     margin: 0 auto !important;
   }
 
-  /* 4. Ajusta o texto para aproveitar o espaço novo */
-  section#main_content {
+  section {
+    padding: 40px 20px !important;
+    width: 100% !important;
     max-width: none !important;
   }
 </style>
@@ -90,6 +89,7 @@ void loop() {
 
   delay(10);
 }
+
 
 
 
