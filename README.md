@@ -1,4 +1,4 @@
-style>
+<style>
   .main-content {
     max-width: 95% !important; /* Faz o texto ocupar 95% da largura da tela */
     margin: 0 auto;
@@ -75,4 +75,5 @@ void loop() {
 
   delay(10);
 }
+
 
