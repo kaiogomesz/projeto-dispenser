@@ -1,7 +1,12 @@
 <style>
+  /* Esconde o cabeçalho colorido do tema */
+  .page-header {
+    display: none;
+  }
   .main-content {
     max-width: 95% !important;
     margin: 0 auto;
+    padding-top: 2rem; /* Adiciona um espacinho no topo para o texto não colar na borda */
   }
   img {
     width: 100%;
@@ -77,6 +82,7 @@ void loop() {
 
   delay(10);
 }
+
 
 
 
