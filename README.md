@@ -105,12 +105,12 @@ Com todos os componentes em mãos, chegou a hora de montar a parte física do se
   - Garanta que os palitos estão bem colados, essa parte é a base que vai segurar todo o resto
 
 2. Complete o resto do projeto com palitos e cole a garrafa PET
-  ![mobri](./imagens/mobri.jpg)
+  ![estrutura](./imagens/estrutura.png)
   - Garanta que esses espaços específicos estão abertos, você os usará para organizar os componentes dentro da estrutura
   - Você pode fazer um pequeno apoio abaixo da saída da garrafa para reforçar
 
 3. Organizando os componentes
-  ![mobri](./imagens/mobri.jpg)
+  ![montado](./imagens/montado.png)
   - Monte o circuito como mostrado na imagem e coloque o sensor e o servor motor nos lugares especificados
   - Conecte todos os cabos, inclusive a alimentação, usando o USB conectado no computador para enviar o código e depois pode escolher entre continuar no USB ou usar alguma alimentação externa.
 
@@ -184,6 +184,7 @@ Neste tutorial, você aprendeu a construir um dispenser usando o Arduino Uno, pa
 Mais do que um projeto funcional, este dispenser é uma ótima forma de testar suas habilidades de montagem e robótica, sendo totalmente personalizável! 
 
 Você pode começar com a versão básica e depois adicionar melhorias, como uma estrutura melhor com outros materiais, porta de saída mais resistente ou até outra forma de montagem. Cada um tem suas particularidades, e nada melhor do que adaptar a tecnologia para o seu universo.
+
 
 
 
