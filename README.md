@@ -63,40 +63,37 @@ Você vai precisar dos seguintes componentes e materiais:
 
 ## Alimentador Automático
 
-A lógica do funcionamento do alimentador automático é bem simples e segue o padrão:
+A lógica do funcionamento do dispenser é bem simples, ela é dividida nessas três partes:
 
-``Pressiona o botão``  > ``Servo Motor abre o compartimento`` > ``O alimento cai enquanto o botão estiver pressionado`` > ``Solta o botão`` > ``Servo Motor fecha o compartimento``
+- **Reservatório**: A garrafa PET servirá como armazenamento do conteúdo que você colocará para uso do dispenser, garantindo praticidade e baixo custo.
 
-<!-- Adiciona Imagem usando o Markdown -->
+- **Controle de liberação**: O servo motor, acoplado à uma "tampa" feita de palitos, abre e fecha a saída da garrafa. Esse movimento libera a quantidade de ração desejada.
+
+- **Gatilho do sistema**: Para que tudo comece, o sinal recebido vem diretamente do sensor HC-SR04, que enviará para o arduino o sinal da sua mão se aproximando, o que fará o servo motor liberar a passagem da garrafa, o mesmo sinalizará quando você afastar a mão, garantindo que o servo motor feche novamente a saída da garrafa, impedindo o disperdicio acidental.
+
+## Montagem do hardware do dispenser
+Com todos os componentes em mãos, chegou a hora de montar a parte física do seu dispenser com o Arduino Uno. O processo pode ser complicado pela montagem da base de palitos e o uso da cola quente, porém o restante é bem simples:
+
+1. Montando a estrutura inicial do projeto
+
 ![Logica de funcionamento](./imagensVideos/semaforo.webp)
 
-<!-- Adiciona imagem usando html-->
- <img src="./imagensVideos/semaforo.webp" alt="Logica de funcionamento" width=500> 
+- Utilize a cola quente e monte essa estrututa para segurar o projeto
+- Garanta que os palitos estão bem colados, essa parte é a base que vai segurar todo o resto
 
- #include <Servo.h>
+2. Complete o resto do projeto com palitos e cole a garrafa PET
 
-Servo gate;
+![Logica de funcionamento](./imagensVideos/semaforo.webp)
 
-int pinPot = A0;
-int valorLido = 0;
-int pos = 0;
+- Garanta que esses espaços específicos estão abertos, você os usará para organizar os componentes dentro da estrutura
+- Você pode fazer um pequeno apoio abaixo da saída da garrafa para reforçar
 
+3. Organizando os componentes
 
-void setup() {
-  gate.attach(9);
-  pinMode(pinPot, INPUT);
+![Logica de funcionamento](./imagensVideos/semaforo.webp)
 
-}
+- Monte o circuito como mostrado na imagem e coloque o sensor e o servor motor nos lugares especificados 
 
-void loop() {
-  valorLido = analogRead(pinPot);
-
-
-  pos = map(valorLido, 0, 1023, 0, 180);
-  gate.write(pos);
-
-  delay(10);
-}
 
 
 
