@@ -1,15 +1,15 @@
 <style>
-  /* 1. Remove o título "projeto-dispenser" e a descrição */
+  /* 1. Esconde o cabeçalho original (título antigo e descrição) */
   #header_wrap h1, #header_wrap h2 {
     display: none !important;
   }
 
-  /* 2. Mantém o botão verde com espaçamento correto */
+  /* 2. Mantém o botão verde com espaçamento limpo */
   #header_wrap .inner {
     padding: 20px 0 !important;
   }
 
-  /* 3. Largura total do site */
+  /* 3. Faz o site ocupar a tela inteira (95%) */
   .wrapper {
     max-width: 95% !important;
     margin: 0 auto !important;
@@ -21,17 +21,30 @@
     max-width: none !important;
   }
 
-  /* 4. Fixa todas as imagens à esquerda */
+  /* 4. Corrige as listas numeradas (1, 2, 3...) */
+  ol {
+    list-style: decimal !important;
+    margin-left: 30px !important;
+  }
+
+  /* 5. Ajusta as IMAGENS para o tamanho do vídeo (560px) */
   img {
     display: block !important;
     margin-left: 0 !important;
     margin-right: auto !important;
-    max-width: 100% !important;
-    height: auto !important;
+    width: 560px !important; /* Mesma largura do vídeo */
+    height: auto !important; /* Mantém a proporção sem amassar */
     clear: both !important;
     border-radius: 8px;
     margin-top: 20px !important;
     margin-bottom: 20px !important;
+  }
+
+  /* Garante que as imagens fiquem boas no celular */
+  @media (max-width: 600px) {
+    img {
+      width: 100% !important;
+    }
   }
 </style>
 ---
@@ -171,6 +184,7 @@ Neste tutorial, você aprendeu a construir um dispenser usando o Arduino Uno, pa
 Mais do que um projeto funcional, este dispenser é uma ótima forma de testar suas habilidades de montagem e robótica, sendo totalmente personalizável! 
 
 Você pode começar com a versão básica e depois adicionar melhorias, como uma estrutura melhor com outros materiais, porta de saída mais resistente ou até outra forma de montagem. Cada um tem suas particularidades, e nada melhor do que adaptar a tecnologia para o seu universo.
+
 
 
 
