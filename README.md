@@ -1,16 +1,15 @@
 <style>
-  /* 1. Remove o título "projeto-dispenser" e a descrição (nick e créditos) */
-  #header_wrap h1, 
-  #header_wrap h2 {
+  /* 1. Remove o título "projeto-dispenser" e a descrição */
+  #header_wrap h1, #header_wrap h2 {
     display: none !important;
   }
 
-  /* 2. Mantém o botão verde mas remove o excesso de espaço que o título ocupava */
+  /* 2. Mantém o botão verde com espaçamento correto */
   #header_wrap .inner {
     padding: 20px 0 !important;
   }
 
-  /* 3. O código que deu certo para a largura total */
+  /* 3. Largura total do site */
   .wrapper {
     max-width: 95% !important;
     margin: 0 auto !important;
@@ -20,6 +19,19 @@
     padding: 40px 20px !important;
     width: 100% !important;
     max-width: none !important;
+  }
+
+  /* 4. Fixa todas as imagens à esquerda */
+  img {
+    display: block !important;
+    margin-left: 0 !important;
+    margin-right: auto !important;
+    max-width: 100% !important;
+    height: auto !important;
+    clear: both !important;
+    border-radius: 8px;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
   }
 </style>
 ---
@@ -159,6 +171,7 @@ Neste tutorial, você aprendeu a construir um dispenser usando o Arduino Uno, pa
 Mais do que um projeto funcional, este dispenser é uma ótima forma de testar suas habilidades de montagem e robótica, sendo totalmente personalizável! 
 
 Você pode começar com a versão básica e depois adicionar melhorias, como uma estrutura melhor com outros materiais, porta de saída mais resistente ou até outra forma de montagem. Cada um tem suas particularidades, e nada melhor do que adaptar a tecnologia para o seu universo.
+
 
 
 
