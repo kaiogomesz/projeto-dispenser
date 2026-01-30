@@ -21,6 +21,10 @@
     width: 100% !important;
     max-width: none !important;
   }
+  ol {
+  list-style: decimal !important;
+  margin-left: 30px !important;
+  }
 </style>
 ---
 
@@ -93,6 +97,7 @@ Com todos os componentes em mãos, chegou a hora de montar a parte física do se
 ![Logica de funcionamento](./imagensVideos/semaforo.webp)
 
 - Monte o circuito como mostrado na imagem e coloque o sensor e o servor motor nos lugares especificados 
+
 
 
 
