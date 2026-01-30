@@ -65,7 +65,7 @@ Você vai precisar dos seguintes componentes e materiais:
  - Alguns Jumpers
 
 
- ### Estrutura física
+### Estrutura física
 <!-- Adiciona Imagem usando o Markdown -->
 ![mobri](./imagens/mobri.jpg)
 
@@ -171,6 +171,7 @@ Neste tutorial, você aprendeu a construir um dispenser usando o Arduino Uno, pa
 Mais do que um projeto funcional, este dispenser é uma ótima forma de testar suas habilidades de montagem e robótica, sendo totalmente personalizável! 
 
 Você pode começar com a versão básica e depois adicionar melhorias, como uma estrutura melhor com outros materiais, porta de saída mais resistente ou até outra forma de montagem. Cada um tem suas particularidades, e nada melhor do que adaptar a tecnologia para o seu universo.
+
 
 
 
