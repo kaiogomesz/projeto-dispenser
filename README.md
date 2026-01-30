@@ -24,7 +24,7 @@
 </style>
 ---
 
-# Como fazer um Dispenser com sensor utilizando o Arduino 
+# Como fazer um dispenser com sensor utilizando o Arduino 
 - Arduino Uno
 - Data: 08/11/2025
 - Autor: Kaio Gomes
@@ -159,6 +159,7 @@ Neste tutorial, você aprendeu a construir um dispenser usando o Arduino Uno, pa
 Mais do que um projeto funcional, este dispenser é uma ótima forma de testar suas habilidades de montagem e robótica, sendo totalmente personalizável! 
 
 Você pode começar com a versão básica e depois adicionar melhorias, como uma estrutura melhor com outros materiais, porta de saída mais resistente ou até outra forma de montagem. Cada um tem suas particularidades, e nada melhor do que adaptar a tecnologia para o seu universo.
+
 
 
 
