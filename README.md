@@ -35,27 +35,31 @@ Você já pensou em ter um despenser para docinhos, alimentos ou ração de pet 
   <iframe width="560" height="315" src="https://www.youtube.com/embed/d7xPMEIS7oE?si=6Y3cv2Av8GlK1CJL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
+Neste tutorial, vamos mostrar os passos para a montagem do dispenser até chegar no resultado visto no vídeo, desde a estrutura inicial até a posição das peças no final.
+
 ## Material Necessário
 Para começar vamos montar nosso circuito. 
 Você vai precisar dos seguintes componentes e materiais:
 
-#### Componentes eletrônicos
+### Componentes eletrônicos
 <!-- Adiciona Imagem usando o Markdown -->
 ![Logica de funcionamento](./imagensVideos/semaforo.webp)
 
  - 1x Placa Arduino Uno
+ - 1x Placa de ensaio
  - 1x Servo Motor
- - 1x Botão
+ - 1x Sensor HC-SR04
  - 1x Fonte de Energia
  - Alguns Jumpers
 
- #### Estrutura física
+
+ ### Estrutura física
 <!-- Adiciona Imagem usando o Markdown -->
 ![Logica de funcionamento](./imagensVideos/semaforo.webp)
 
-- Garrafa PET: será usada como reservatório da ração
-- Folhas de papelão: suportes e estrutura para fixar o servo motor e direcionar a saída da ração
-- Palitos de picolé: reforço para a estrutura de papelão
+- Garrafa PET: será usada como reservatório
+- Cola quente: material necessário para montar a estrutura do projeto
+- Palitos de picolé: estrutura e reforço do projeto
 
 ## Alimentador Automático
 
@@ -93,6 +97,7 @@ void loop() {
 
   delay(10);
 }
+
 
 
 
