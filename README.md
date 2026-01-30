@@ -75,24 +75,84 @@ A lógica do funcionamento do dispenser é bem simples, ela é dividida nessas t
 Com todos os componentes em mãos, chegou a hora de montar a parte física do seu dispenser com o Arduino Uno. O processo pode ser complicado pela montagem da base de palitos e o uso da cola quente, porém o restante é bem simples:
 
 1. Montando a estrutura inicial do projeto
-
   ![Logica de funcionamento](./imagensVideos/semaforo.webp)
-  
   - Utilize a cola quente e monte essa estrututa para segurar o projeto
   - Garanta que os palitos estão bem colados, essa parte é a base que vai segurar todo o resto
 
 2. Complete o resto do projeto com palitos e cole a garrafa PET
-
   ![Logica de funcionamento](./imagensVideos/semaforo.webp)
-  
   - Garanta que esses espaços específicos estão abertos, você os usará para organizar os componentes dentro da estrutura
   - Você pode fazer um pequeno apoio abaixo da saída da garrafa para reforçar
 
 3. Organizando os componentes
-   
-  ![Logica de funcionamento](./imagensVideos/semaforo.webp)
+   ![Logica de funcionamento](./imagensVideos/semaforo.webp)
+  - Monte o circuito como mostrado na imagem e coloque o sensor e o servor motor nos lugares especificados
+  - Conecte todos os cabos, inclusive a alimentação, usando o USB conectado no computador para enviar o código e depois pode escolher entre continuar no USB ou usar alguma alimentação externa.
+
+## Programação do Dispenser
+Agora que a parte física está montada, vamos programar o Arduino Uno para que o dispenser funcione da forma certa, seguindo a lógica explicada anteriormente.
+
+O código segue três etapas principais:
+
+- O sensor HC-SR04 envia um sinal e capta de volta, calculando a distância que o sinal percorreu
+- Se for a distância de 10cm do sensor, o servo motor será ativado e a comporta abrirá para despejar o conteúdo na garrafa
+- Quando a distância vista pelo sensor for maior que 10cm, o servo motor voltará à posição inicial, fechando a saída da garrafa.
+
+```cpp
+#include <Servo.h> //Chama a biblioteca servo
+
+// Definição dos pinos
+const int TRIG_PIN = 9;
+const int ECHO_PIN = 10;
+const int SERVO_PIN = 6;
+
+// Configurações de distância e ângulos
+const int DISTANCIA_GATILHO = 10; // Distância em cm para ativar
+const int ANGULO_REPOUSO = 0;      // Posição inicial
+const int ANGULO_ATIVADO = 90;     // Posição quando detecta algo
+
+Servo meuServo; //Nome do servo
+
+void setup() {
+  Serial.begin(9600); //Liga a conexão serial
   
-  - Monte o circuito como mostrado na imagem e coloque o sensor e o servor motor nos lugares especificados 
+  pinMode(TRIG_PIN, OUTPUT); //Define o pino como saída
+  pinMode(ECHO_PIN, INPUT); //Define o pino como entrada
+  
+  meuServo.attach(SERVO_PIN); //Define o pino do servo para ser usado
+  meuServo.write(ANGULO_REPOUSO); // Começa na posição inicial
+}
+
+void loop() {
+  //Pulso para ler o sensor
+  digitalWrite(TRIG_PIN, LOW);
+  delayMicroseconds(2);
+  digitalWrite(TRIG_PIN, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(TRIG_PIN, LOW);
+
+  //Calcula a distância
+  long duracao = pulseIn(ECHO_PIN, HIGH);
+  int distancia = duracao * 0.034 / 2;
+
+  // Mostra a distância no Monitor Serial 
+  Serial.print("Distancia: ");
+  Serial.print(distancia);
+  Serial.println(" cm");
+
+  // Lógica do movimento
+  if (distancia > 0 && distancia < DISTANCIA_GATILHO) {
+    // Se algo estiver perto, move o servo
+    meuServo.write(ANGULO_ATIVADO);
+  } else {
+    // Se não tiver nada, volta para o repouso
+    meuServo.write(ANGULO_REPOUSO);
+  }
+
+  delay(100); // Pequena pausa para estabilidade
+}
+```
+
 
 
 
