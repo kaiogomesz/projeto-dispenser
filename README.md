@@ -21,10 +21,6 @@
     width: 100% !important;
     max-width: none !important;
   }
-  ol {
-  list-style: decimal !important;
-  margin-left: 30px !important;
-  }
 </style>
 ---
 
@@ -79,24 +75,19 @@ A lógica do funcionamento do dispenser é bem simples, ela é dividida nessas t
 Com todos os componentes em mãos, chegou a hora de montar a parte física do seu dispenser com o Arduino Uno. O processo pode ser complicado pela montagem da base de palitos e o uso da cola quente, porém o restante é bem simples:
 
 1. Montando a estrutura inicial do projeto
-
   ![Logica de funcionamento](./imagensVideos/semaforo.webp)
-
-- Utilize a cola quente e monte essa estrututa para segurar o projeto
-- Garanta que os palitos estão bem colados, essa parte é a base que vai segurar todo o resto
+  - Utilize a cola quente e monte essa estrututa para segurar o projeto
+  - Garanta que os palitos estão bem colados, essa parte é a base que vai segurar todo o resto
 
 2. Complete o resto do projeto com palitos e cole a garrafa PET
-
   ![Logica de funcionamento](./imagensVideos/semaforo.webp)
-
-- Garanta que esses espaços específicos estão abertos, você os usará para organizar os componentes dentro da estrutura
-- Você pode fazer um pequeno apoio abaixo da saída da garrafa para reforçar
+  - Garanta que esses espaços específicos estão abertos, você os usará para organizar os componentes dentro da estrutura
+  - Você pode fazer um pequeno apoio abaixo da saída da garrafa para reforçar
 
 3. Organizando os componentes
-
   ![Logica de funcionamento](./imagensVideos/semaforo.webp)
+  - Monte o circuito como mostrado na imagem e coloque o sensor e o servor motor nos lugares especificados 
 
-- Monte o circuito como mostrado na imagem e coloque o sensor e o servor motor nos lugares especificados 
 
 
 
