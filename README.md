@@ -80,23 +80,24 @@ Com todos os componentes em mãos, chegou a hora de montar a parte física do se
 
 1. Montando a estrutura inicial do projeto
 
-![Logica de funcionamento](./imagensVideos/semaforo.webp)
+  ![Logica de funcionamento](./imagensVideos/semaforo.webp)
 
 - Utilize a cola quente e monte essa estrututa para segurar o projeto
 - Garanta que os palitos estão bem colados, essa parte é a base que vai segurar todo o resto
 
 2. Complete o resto do projeto com palitos e cole a garrafa PET
 
-![Logica de funcionamento](./imagensVideos/semaforo.webp)
+  ![Logica de funcionamento](./imagensVideos/semaforo.webp)
 
 - Garanta que esses espaços específicos estão abertos, você os usará para organizar os componentes dentro da estrutura
 - Você pode fazer um pequeno apoio abaixo da saída da garrafa para reforçar
 
 3. Organizando os componentes
 
-![Logica de funcionamento](./imagensVideos/semaforo.webp)
+  ![Logica de funcionamento](./imagensVideos/semaforo.webp)
 
 - Monte o circuito como mostrado na imagem e coloque o sensor e o servor motor nos lugares especificados 
+
 
 
 
